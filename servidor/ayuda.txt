@@ -1,0 +1,22 @@
+Pasos para instalar el servidor virtual en Windows.
+Pre-requisitos
+
+Ya se debe de tener instalado Python.
+Acceso a la consola de comandos como administrador.
+Tener una carpeta con todos los permisos. En mi caso cree una carpeta en mis documentos “Curso Python”.
+Pasos
+
+En la carpeta “Curso Python” crea el archivo get-pip.py.
+Copia todo el contenido de la pagina https://bootstrap.pypa.io/get-pip.py en el archivo get-pip.py.
+Abre la consola de comandos como administrador, y colócate en la carpeta “Curso Python”.
+Después ejecuta el comando python get-pip.py
+Para corroborar que efectivamente este instalado Pip, ejecutamos el comando where pip. Te debe de mostrar la ruta de instalación.
+Cierra la consola de comandos, y ábrela de nuevo como administrador.
+Instala el generador de entornos virtuales con pip install virtualenv (si notas que no avanza la instalación puedes dar un Enter)
+ejecutar esto virtualenv venv --system-site-packages
+Para corroborar que efectivamente este instalado virtualenv, ejecutamos el comando where virtualenv. Te debe de mostrar la ruta de instalación.
+En la carpeta “Curso Python” crea una carpeta llamada servidor, con el comando md servidor.
+Entra en la carpeta servidor cd servidor
+Generamos el entorno virtual, que por convención le pondremos el nombre venv, con el comando virtualenv venv. Es importante que te fijes en que carpeta podrás ejecutar el entorno virtual, lo distingues porque dice “New Python executable in …”
+Colócate al final de la ruta que se mostró en el paso anterior.
+Arranca el entorno virtual con el comando activate. La siguiente línea de comandos se le debe de anteponer (venv).
